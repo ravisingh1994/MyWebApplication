@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<h1>Hello I am In</h1>
+<h1>@ViewBag.data1</h1>
+<h1>@ViewBag.data2</h1>
+<h1>@ViewBag.data4</h1>
+<h1>@ViewBag.data3</h1>
+<ul>
+    @foreach (object obj in ViewBag.ListData) 
+    {
+        <li>@obj</li>
+    }
+</ul>
+
+<h1>+++++++++++++++++++++++++++++++++++++++++++++++==</h1>
+<h1>I am in View Data</h1>
+<h1>@ViewData["Name"]</h1>
+<h1>@ViewData["id"]</h1>
+<h1>@ViewData["age"]</h1>
+<h1>@ViewData["Salary"]</h1>
+
